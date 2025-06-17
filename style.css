@@ -1,0 +1,86 @@
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+header {
+    background-color: #f7eee4;
+    text-align: left;
+    display: flex
+}
+
+nav {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 22px;
+    text-align: center;
+    background-color: #f7eee4;
+    padding-top: 10px
+}
+
+.navitem {
+    display: inline;
+    color: gold;
+    border: 1px solid brown;
+    padding: 10px;
+    border-radius: 20px;
+}
+.navitem:hover {
+    background-color: beige;
+}
+
+a {
+    color: #a89333;
+    text-decoration: none
+}
+
+a:hover {
+    color: orangered;
+
+}
+
+footer {
+    padding-top: 100px;
+    text-align: right;
+    font-size: 10px;
+}
+
+.navitem a[aria-current="page"] {
+    color: orangered;
+}
+
+.allergene {
+    text-align: left;
+    margin-left: 25%;
+    width: 50%;
+}
+
+table {
+    text-align: left;
+    width: 75%;
+    margin-left: 15%;
+    border: 2px solid brown;
+    border-radius: 13px
+}
+
+table th {
+    text-align: center;
+    color: brown;
+    padding-bottom: 15px;
+    background-color: beige
+}
+
+
+table caption {
+    font-size: 22px;
+    text-align: right;
+    padding-right: 50px;
+    padding-bottom: 12px;
+    color: orange
+}

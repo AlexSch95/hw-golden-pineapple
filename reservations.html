@@ -10,7 +10,7 @@
     <header>
         <img src="images/logo_small.png" alt="Restaurant zur goldenen Ananas Logo" width="300">
         <nav aria-label="Hauptnavigation">
-            <ul>
+            <ul class ="navelements">
                 <li class="navitem"><a href="index.html">Startseite</a></li>
                 <li class="navitem"><a href="aboutus.html">Über Uns</a></li>
                 <li class="navitem"><a href="menu.html">Speisekarte</a></li>
@@ -21,21 +21,25 @@
         </nav>
     </header>
     <main>
-        <form action="#" method="post">
+        <form action="#" method="post" class="reservation-form">
             <fieldset>
-                <legend class="contact-data">Ihre Kontaktdaten</legend>
+                <legend>Ihre Kontaktdaten</legend>
+                <div class="contact-data-element">
+                    <label for="vorname" class="contact-data">Vorname:</label>
+                    <input type="text" id="vorname" name="vorname" required>
+
+                    <label for="nachname" class="contact-data">Nachname:</label>
+                    <input type="text" id="nachname" name="nachname" required><br>
+                </div>
+
                 
-                <label for="vorname" class="contact-data">Vorname:</label>
-                <input type="text" id="vorname" name="vorname" required>
-                
-                <label for="nachname" class="contact-data">Nachname:</label>
-                <input type="text" id="nachname" name="nachname" required>
-                
-                <label for="email" class="contact-data">E-Mail:</label>
-                <input type="email" id="email" name="email" required placeholder="beispiel@email.de">
-                
-                <label for="telefon" class="contact-data">Telefon:</label>
-                <input type="tel" id="telefon" name="telefon" required placeholder="0123456789">
+
+                <div class="contact-data-element">
+                    <label for="email" class="contact-data">E-Mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="beispiel@email.de">
+                    
+                    <label for="telefon" class="contact-data">Telefon:</label>
+                    <input type="tel" id="telefon" name="telefon" required placeholder="0123456789">
             </fieldset>
             <fieldset>
                 <legend class="reservation-details">Reservierungsdetails</legend>

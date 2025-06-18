@@ -1,7 +1,20 @@
 body {
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh;
+    margin: 0;
+}
+
+.reservation-form {
+    margin: auto;
+    width: 50%;
+    padding: 50px
+}
+.contact-data-element {
+    padding-bottom: 15px;
+    margin: 15px;
 }
 
 h1 {
@@ -24,8 +37,15 @@ nav {
     padding-top: 10px
 }
 
+.navelements {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
 .navitem {
-    display: inline;
     color: gold;
     border: 1px solid brown;
     padding: 10px;
@@ -83,4 +103,24 @@ table caption {
     padding-right: 50px;
     padding-bottom: 12px;
     color: orange
+}
+
+.timeline-item {
+    margin: auto;
+    width: 50%;
+}
+
+.Mitarbeiter {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 50%;
+}
+
+.mitarbeiter-card {
+    border: 1px solid brown;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: beige
 }
